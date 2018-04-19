@@ -892,6 +892,9 @@ class Item{
 			self::$list[self::BEETROOT_SEEDS] = BeetrootSeeds::class;
 			self::$list[self::SIGN] = Sign::class;
 			self::$list[self::WOODEN_DOOR] = WoodenDoor::class;
+			self::$list[self::MINECART] = Minecart::class;
+			self::$list[self::BOAT] = Boat::class;
+			self::$list[self::FISHING_ROD] = FishingRod::class;
 			self::$list[self::BUCKET] = Bucket::class;
 			self::$list[self::IRON_DOOR] = IronDoor::class;
 			self::$list[self::SPRUCE_DOOR_BLOCK] = SpruceDoor::class;
@@ -968,13 +971,8 @@ class Item{
 			self::$list[self::POTION] = Potion::class;
             
             // update for 1.0
-			self::$list[self::CHORUS_FRUIT] = ChorusFruit::class;
-
-			// for($i = 0; $i < 256; ++$i){
-			// 	if(Block::$list[$i] !== null){
-			// 		self::$list[$i] = Block::$list[$i];
-			// 	}
-			// }
+			self::$list[self::CHORUS_FRUIT] = ChorusFruit::class;			
+			self::$list[self::REDSTONE_DUST] = Redstone::class;
 		}
 
 		self::initCreativeItems();

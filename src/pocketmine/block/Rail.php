@@ -31,6 +31,16 @@ use pocketmine\Player;
 
 class Rail extends Transparent{
 	
+	const STRAIGHT_EAST_WEST = 0;
+	const STRAIGHT_NORTH_SOUTH = 1;
+	const SLOPED_ASCENDING_NORTH = 2;
+	const SLOPED_ASCENDING_SOUTH = 3;
+	const SLOPED_ASCENDING_EAST = 4;
+	const SLOPED_ASCENDING_WEST = 5;
+	const CURVED_NORTH_WEST = 7;
+	const CURVED_SOUTH_WEST = 6;
+	const CURVED_SOUTH_EAST = 9;
+	const CURVED_NORTH_EAST = 8;
 	const META_NORTH_SOUTH = 0;
 	const META_EAST_WEST = 1;
 	const META_EAST_ASC = 2;

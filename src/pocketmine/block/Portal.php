@@ -24,25 +24,27 @@ namespace pocketmine\block;
 use pocketmine\item\Item;
 use pocketmine\item\Tool;
 
-class StonePressurePlate extends WoodenPressurePlate {
+class Portal extends Transparent{
 
-	protected $id = self::STONE_PRESSURE_PLATE;
+	protected $id = self::PORTAL;
 
-	public function __construct($meta = 0){
-		$this->meta = $meta;
+	public function __construct(){
+
 	}
 
-	public function getName(){
-		return "Stone Pressure Plate";
+	public function getHardness(){
+		return 1;
 	}
 
 	public function getToolType(){
 		return Tool::TYPE_PICKAXE;
 	}
 
+	public function getName(){
+		return "Portal";
+	}
+
 	public function getDrops(Item $item){
-		return [
-			[Item::STONE_PRESSURE_PLATE, 0, 1],
-		];
+		return [];
 	}
 }
